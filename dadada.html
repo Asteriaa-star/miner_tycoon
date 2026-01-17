@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miner Tycoon: Ultimate Edition</title>
+    <link rel="stylesheet" href="csscss.css">
+</head>
+<body>
+
+<div id="meteor">☄️</div>
+
+<div class="game-wrapper">
+    <div class="main-panel">
+        <h1 class="game-title">Miner Tycoon</h1>
+        <h2 id="money">$0</h2>
+        
+        <div class="progress-container">
+            <div id="prestigeFill"></div>
+        </div>
+        <div class="progress-labels">
+            <span>Progres Rebirth</span>
+            <span><span id="prestigePercent">0</span>%</span>
+        </div>
+
+        <div class="click-zone" id="clickBtn">
+            <span>⛏️</span>
+        </div>
+
+        <div class="rune-display">
+            <small>Rune Aktif</small><br>
+            <strong id="runeName" class="common-txt">None</strong> 
+            <span id="runeValDisplay">(x0)</span><br>
+            <small>Pity: <span id="pityCount">0</span>/30</small>
+        </div>
+
+        <button class="btn btn-blue" id="buyClick">Upgrade Tools ($<span id="cCost">15</span>)</button>
+        <button class="btn btn-blue" id="buyAuto">Hire Miner ($<span id="aCost">100</span>)</button>
+        <button class="btn btn-purple" id="gachaBtn">Gacha Rune ($<span id="gCost">500</span>)</button>
+        
+        <div class="drop-table" id="dropTableContainer"></div>
+
+        <button class="btn btn-red" id="prestigeBtn">REBIRTH (Reset & Power Up)</button>
+    </div>
+
+    <div class="side-panel">
+        <h3>Ascension Tree</h3>
+        <p>Prestige Points: <strong id="pPoints" class="gold-txt">0</strong></p>
+        
+        <div class="skill-node" id="skill1">
+            <strong>Investor (1 Pts)</strong><br>
+            Uang offline tetap masuk 100%.
+        </div>
+        <div class="skill-node" id="skill2">
+            <strong>Strong Fingers (2 Pts)</strong><br>
+            Klik manual +5% dari total PPS.
+        </div>
+        <div class="skill-node" id="skill3">
+            <strong>Divine Luck (3 Pts)</strong><br>
+            Peluang Rune langka naik 1.5x.
+        </div>
+        
+        <button class="btn btn-skill" id="buySkill">Beli Skill Berikutnya</button>
+
+        <hr class="divider">
+        
+        <h4>Statistik Global</h4>
+        <div class="stats-text">
+            PPS Dasar: $<span id="basePps">0</span><br>
+            Mult. Global: x<span id="globalMultDisplay">1</span><br>
+            Total Rebirth: <span id="rebirthCount">0</span>
+        </div>
+    </div>
+</div>
+
+<script src="jsjsjs.js"></script>
+</body>
+</html>
